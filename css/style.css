@@ -1,10 +1,15 @@
 :root{
-  --primary:#1d5888;
-  --secondary:#ff993b;
+  --primary:#d83a25;
+  --secondary:#abb9a2;
 }
 main>.container {
   padding: 60px 15px 0;
   margin-bottom: 5rem;
+}
+.appCon{
+  background-color:#abb9a2;
+}
+.alert { background-color:#B0A2B9
 }
 .sticky-nav {
   position: fixed;

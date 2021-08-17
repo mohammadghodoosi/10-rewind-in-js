@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>PageTitle</title>
+    <title>REWIND</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +28,7 @@
     <div class="container-fluid">
         <div class="navbar-brand fontP mx-sm-5 d-flex align-items-center">
             <img src="img/infinityW.png" class='mx-1' height='25px' width='35px'>
-           HUNDO</div>
+           REWIND</div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,16 +39,16 @@
                     <a class="nav-link" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="app.html">app</a>
+                    <a class="nav-link" href="app.html">the App</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="code.html">code</a>
+                    <a class="nav-link active" aria-current="page" href="code.html">the Code</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" target='_blank' href="code.html">git repo</a>
+                  <a class="nav-link" target='_blank' href="code.html">Git repo</a>
                  </li>
                 <li class="nav-item">
-                 <a class="nav-link" target='_blank' href="code.html">about</a>
+                 <a class="nav-link" target='_blank' href="code.html">About</a>
                </li>
                
             </ul>
@@ -58,17 +58,54 @@
 
     <main class="flex-shrink-0">
        <div class="container">
-           <h3 class="border-1 border-dark border-bottom py-3">code</h3>
+           <h3 class="border-3 border-dark border-bottom py-3 text-end">the code of REWIND</h3>
          <div class="row row-cols-1 row-cols-sm-2">
              <div class="col-sm-8">
                 <pre class="line-numbers">
                     <code class="language-javascript">
-                        alert('a')
+                        //step 1
+function getValue(){
+ let stringValue=document.getElementById('inputString').value
+ processValue(stringValue)
+}
+
+//step 2
+function processValue(sv){
+ let reverseValue=[]
+ let stringLength=sv.length-1
+ for(stringLength;stringLength>=0;stringLength--){
+   reverseValue+=sv[stringLength]
+ }
+ showValue(reverseValue)
+}
+
+//step 3
+function showValue(pv){
+ document.getElementById('message').innerHTML=`your REWIND is <strong>${pv}</strong>`
+ document.getElementById('alert').classList.remove('invisible')
+}
                     </code>
                 </pre>
              </div>
-             <div class="col-sm-4 order-first order-sm-last align-items-center d-flex">
-                    dfs
+             <div class="col-sm-4 order-first order-sm-last">
+                    <div class="row">
+                        <div class="col mt-sm-5">
+                            <h5>step 1</h5>
+                            <p>getting data from user</p>
+                        </div>
+                    </div>
+                    <div class="row mt-sm-5">
+                        <div class="col mt-sm-5 mb-sm-5">
+                            <h5>step 2</h5>
+                            <p>processing and reversing the string with the help of loops</p>
+                        </div>
+                    </div>
+                    <div class="row mt-sm-5">
+                        <div class="col mt-sm-5">
+                            <h5>step 3</h5>
+                            <p>displaying the REWIND in to the UI</p>
+                        </div>
+                    </div>
              </div>
          </div>
        </div>
